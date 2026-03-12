@@ -2,46 +2,52 @@
 	"tribeData": {
 		"none": {},
 		"nature": {},
-		"aimo": {
-			"startingStars": 5
-		},
-		"aquarion": {
-			"startingStars": 5
-		},
-		"bardur": {
-			"startingStars": 5
-		},
-		"elyrion": {
-			"startingStars": 5
-		},
-		"hoodrick": {
+		"xinxi": {
 			"startingStars": 5
 		},
 		"imperius": {
+			"startingStars": 3
+		},
+		"bardur": {
+			"startingStars": 3,
+			"resourceModifier": {
+				"crop": 0
+			},
+			"terrainModifier": {
+				"forest": 1.5
+			}
+		},
+		"oumaji": {
 			"startingStars": 5
 		},
 		"kickoo": {
+			"startingStars": 3
+		},
+		"hoodrick": {
 			"startingStars": 5
 		},
 		"luxidoor": {
 			"startingStars": 5
 		},
-		"oumaji": {
+		"vengir": {
+			"startingStars": 5
+		},
+		"zebasi": {
+			"startingStars": 3
+		},
+		"aimo": {
 			"startingStars": 5
 		},
 		"quetzali": {
 			"startingStars": 5
 		},
-		"vengir": {
-			"startingStars": 5
-		},
-		"xinxi": {
-			"startingStars": 5
-		},
 		"yadakk": {
 			"startingStars": 5
 		},
-		"zebasi": {
+		"aquarion": {
+			"startingStars": 5
+		},
+		"elyrion": {
 			"startingStars": 5
 		},
 		"polaris": {
