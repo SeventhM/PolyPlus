@@ -220,5 +220,17 @@
 	"resourceData": {},
 	"taskData": {},
 	"skinData": {},
-	"diplomacyData": {}
+	"diplomacyData": {},
+	"improvementAbility": {},
+	"playerAbility": {
+		"waterembark": {
+			"idx": -1
+		}
+	},
+	"unitAbility": {
+		"slide": {
+			"idx": -1
+		}
+	},
+	"tribeAbility": {}
 }
