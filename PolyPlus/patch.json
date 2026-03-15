@@ -200,7 +200,18 @@
 		"icebank": {},
 		"icetemple": {},
 		"polarisclimate": {},
-		"fungi": {},
+		"fungi": {
+			"cost": 7,
+			"terrainRequirements": [
+				{
+					"resource": "crop"
+				},
+				{
+					"resource": "spores"
+				}
+			],
+			"maxlevel": 2
+		},
 		"algae": {},
 		"mycelium": {},
 		"clathrus": {},
