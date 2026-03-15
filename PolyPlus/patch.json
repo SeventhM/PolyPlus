@@ -62,8 +62,24 @@
 		}
 	},
 	"techData": {
-		"basic": {},
-		"riding": {},
+		"basic": {
+			"techUnlocks": [
+				"organization",
+				"climbing",
+				"fishingplus",
+				"hunting",
+				"freespirit"
+			],
+			"abilityUnlocks": [
+				"+disband"
+			]
+		},
+		"riding": {
+			"techUnlocks": [
+				"chivalry"
+			],
+			"cost": 2
+		},
 		"freespirit": {
 			"improvementUnlocks": [
 				"+guild",
@@ -72,14 +88,24 @@
 				"+mountaintemple",
 				"+icetemple"
 			],
+			"techUnlocks": [
+				"roads",
+				"shields"
+			],
 			"abilityUnlocks": [
 				"-disband"
-			]
+			],
+			"cost": 1
 		},
 		"chivalry": {},
 		"roads": {},
 		"trade": {},
-		"organization": {},
+		"organization": {
+			"techUnlocks": [
+				"-shields",
+				"+riding"
+			]
+		},
 		"shields": {},
 		"farming": {},
 		"construction": {},
