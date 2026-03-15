@@ -120,15 +120,31 @@
 		"fishingsimple": {},
 		"fishing": {},
 		"ramming": {},
-		"aquatism": {},
+		"aquatism": {
+			"improvementUnlocks": [
+				"-watertemple"
+			]
+		},
 		"sailing": {},
-		"navigation": {},
+		"navigation": {
+			"improvementUnlocks": [
+				"-starfishing"
+			]
+		},
 		"hunting": {},
 		"forestry": {},
 		"archery": {},
-		"spiritualism": {},
+		"spiritualism": {
+			"improvementUnlocks": [
+				"-foresttemple"
+			]
+		},
 		"climbing": {},
-		"meditation": {},
+		"meditation": {
+			"improvementUnlocks": [
+				"-icetemple"
+			]
+		},
 		"philosophy": {},
 		"mining": {},
 		"smithery": {},
@@ -150,7 +166,11 @@
 		},
 		"polarwarfare": {},
 		"sledding": {},
-		"polarism": {},
+		"polarism": {
+			"improvementUnlocks": [
+				"-watertemple"
+			]
+		},
 		"oceanology": {},
 		"shock": {},
 		"recycling": {
