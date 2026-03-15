@@ -119,7 +119,11 @@
 		"construction": {},
 		"fishingsimple": {},
 		"fishing": {},
-		"ramming": {},
+		"ramming": {
+			"improvementUnlocks":[
+				"+harvestaquacrop"
+			]
+		},
 		"aquatism": {
 			"improvementUnlocks": [
 				"-watertemple"
@@ -150,7 +154,12 @@
 		"smithery": {},
 		"aquabase": {},
 		"aquafishing": {},
-		"aquaculture": {},
+		"aquaculture": {
+			"improvementUnlocks":[
+				"+harvestaquacrop",
+				"-aquafarm"
+			]
+		},
 		"marinelife": {},
 		"freediving": {},
 		"waterways": {},
@@ -165,7 +174,11 @@
 			]
 		},
 		"polarwarfare": {},
-		"sledding": {},
+		"sledding": {
+			"improvementUnlocks":[
+				"+harvestaquacrop"
+			]
+		},
 		"polarism": {
 			"improvementUnlocks": [
 				"-watertemple"
