@@ -55,6 +55,13 @@
 			"startingStars": 5
 		},
 		"polaris": {
+			"techOverrides": {
+				"fishing": "fishing",
+				"sailing": "frostwork",
+				"navigation": "polarwarfare",
+				"aquatism": "polarism",
+				"ramming" : "sledding"
+			},
 			"startingStars": 5
 		},
 		"cymanti": {
@@ -136,7 +143,11 @@
 		"forestmagic": {},
 		"watermagic": {},
 		"icefishing": {},
-		"frostwork": {},
+		"frostwork": {
+			"techUnlocks": [
+				"navigation"
+			]
+		},
 		"polarwarfare": {},
 		"sledding": {},
 		"polarism": {},
