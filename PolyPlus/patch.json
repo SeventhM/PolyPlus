@@ -210,6 +210,25 @@
 		"lighthouse": {},
 		"bridge": {},
 		"aquafarm": {},
+		"harvestaquacrop": {
+			"idx": -1,
+			"cost": 5,
+			"terrainRequirements": [
+				{
+					"resource": "aquacrop"
+				}
+			],
+			"improvementAbilities": [
+				"consumed"
+			],
+			"maxLevel": 0,
+			"rewards": [
+				{
+					"population": 2
+				}
+			],
+			"shouldSuggestUnlock": true
+		},
 		"market": {},
 		"atoll": {},
 		"canal": {},
