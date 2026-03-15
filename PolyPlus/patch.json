@@ -230,6 +230,31 @@
 			"shouldSuggestUnlock": true
 		},
 		"market": {},
+		"customshouse": {
+			"hidden": false,
+			"cost": 10,
+			"work": 1,
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				}
+			],
+			"adjacencyRequirements": [
+				{
+					"improvement": "port"
+				}
+			],
+			"adjacencyImprovements": [
+				{
+					"improvement": "port"
+				}
+			],
+			"improvementAbilities": [
+				"limited"
+			],
+			"maxLevel": 8,
+			"idx": 4
+		},
 		"atoll": {},
 		"canal": {},
 		"fertilize": {},
