@@ -64,7 +64,18 @@
 	"techData": {
 		"basic": {},
 		"riding": {},
-		"freespirit": {},
+		"freespirit": {
+			"improvementUnlocks": [
+				"+guild",
+				"+foresttemple",
+				"+watertemple",
+				"+mountaintemple",
+				"+icetemple"
+			],
+			"abilityUnlocks": [
+				"-disband"
+			]
+		},
 		"chivalry": {},
 		"roads": {},
 		"trade": {},
@@ -189,16 +200,33 @@
 		"growforest": {},
 		"harvestfruit": {},
 		"temple": {},
-		"foresttemple": {},
-		"watertemple": {},
-		"mountaintemple": {},
+		"foresttemple": {
+			"cost": 20,
+			"improvementAbilities": [
+				"+discrete"
+			]
+		},
+		"watertemple": {
+			"improvementAbilities": [
+				"+discrete"
+			]
+		},
+		"mountaintemple": {
+			"improvementAbilities": [
+				"+discrete"
+			]
+		},
 		"mine": {},
 		"forge": {},
 		"enchantanimal": {},
 		"sanctuary": {},
 		"outpost": {},
 		"icebank": {},
-		"icetemple": {},
+		"icetemple": {
+			"improvementAbilities": [
+				"+discrete"
+			]
+		},
 		"polarisclimate": {},
 		"fungi": {
 			"cost": 7,
