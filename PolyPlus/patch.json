@@ -36,6 +36,10 @@
 			"startingStars": 3
 		},
 		"aimo": {
+			"startingTech": [
+				"basic",
+				"meditation"
+			],
 			"startingStars": 5
 		},
 		"quetzali": {
