@@ -74,12 +74,6 @@
 				"+disband"
 			]
 		},
-		"riding": {
-			"techUnlocks": [
-				"chivalry"
-			],
-			"cost": 2
-		},
 		"freespirit": {
 			"improvementUnlocks": [
 				"+guild",
@@ -97,7 +91,8 @@
 			],
 			"cost": 1
 		},
-		"chivalry": {},
+		"shields": {},
+		"diplomacy": {},
 		"roads": {},
 		"trade": {},
 		"organization": {
@@ -106,10 +101,18 @@
 				"+riding"
 			]
 		},
-		"shields": {},
+		"riding": {
+			"techUnlocks": [
+				"chivalry"
+			],
+			"cost": 2
+		},
+		"chivalry": {},
 		"farming": {},
 		"construction": {},
+		"fishingsimple": {},
 		"fishing": {},
+		"ramming": {},
 		"aquatism": {},
 		"sailing": {},
 		"navigation": {},
@@ -122,29 +125,26 @@
 		"philosophy": {},
 		"mining": {},
 		"smithery": {},
+		"aquabase": {},
+		"aquafishing": {},
+		"aquaculture": {},
+		"marinelife": {},
 		"freediving": {},
-		"spearing": {},
+		"waterways": {},
 		"riding2": {},
+		"spearing": {},
 		"forestmagic": {},
 		"watermagic": {},
+		"icefishing": {},
 		"frostwork": {},
 		"polarwarfare": {},
+		"sledding": {},
 		"polarism": {},
 		"oceanology": {},
 		"shock": {},
 		"recycling": {},
 		"hydrology": {},
-		"diplomacy": {},
-		"aquaculture": {},
-		"fishingsimple": {},
-		"sledding": {},
-		"icefishing": {},
 		"pescetism": {},
-		"ramming": {},
-		"aquabase": {},
-		"marinelife": {},
-		"aquafishing": {},
-		"waterways": {},
 		"rituals": {},
 		"mysticism": {}
 	},
