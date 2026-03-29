@@ -51,6 +51,7 @@
 		"aquarion": {
 			"techOverrides": {
 				"fishing": "fishing",
+				"sailing": "aquaculture",
 				"aquatism": "aquatism2"
 			},
 			"improvementOverrides": {
@@ -85,28 +86,15 @@
 		},
 		"cymanti": {
 			"unitOverrides": {
-				"rider": "hexapod",
-				"giant": "centipede",
-				"knight": "doomux",
 				"archer": "phychi",
-				"swordsman": "mantis",
-				"catapult": "exida",
-				"defender": "kiton",
-				"mindbender": "mindbender",
-				"cloak": "moth",
-				"dagger": "bugegg",
-				"pirate":"bugegg",
-				"rammership":"boomchi",
-				"scoutship":"raychi",
-				"bombership":"island"
+				"rammership":"raychi",
+				"scoutship":"boomchi"
 			},
 			"techOverrides": {
+				"sailing": "sailing2",
 				"aquatism": "aquatism2",
-				"roads": "cymroads",
-				"construction": "recycling",
-				"chivalry": "shock",
-				"meditation": "rituals",
-				"philosophy": "mysticism"
+				"meditation": "meditation",
+				"roads": "cymroads"
 			},
 			"improvementOverrides": {
 				"market": "market",
@@ -114,7 +102,7 @@
 			},
 			"startingUnit": "warrior",
 			"startingStars": 5
-		}
+		},
 	},
 	"techData": {
 		"basic": {
@@ -202,7 +190,24 @@
 			"cost": 3,
 			"idx": -1
 		},
-		"sailing": {},
+		"sailing": {
+			"movementUnlocks": {
+				"water": 1
+			}
+		},
+		"sailing2": {
+			"techUnlocks": [
+				"navigation"
+			],
+			"unitUnlocks": [
+				"scoutship"
+			],
+			"movementUnlocks": {
+				"water": 1
+			},
+			"cost": 2,
+			"idx": -1
+		},
 		"navigation": {
 			"improvementUnlocks": [
 				"-starfishing"
@@ -524,7 +529,7 @@
 				}
 			],
 			"idx": -1
-		}
+		},
 		"outpost": {},
 		"icebank": {},
 		"icetemple": {
