@@ -252,11 +252,17 @@
 		},
 		"climbing": {},
 		"meditation": {
+			"unitUnlocks": [
+				"+mindbender"
+			],
 			"improvementUnlocks": [
 				"-icetemple"
 			]
 		},
 		"philosophy": {
+			"unitUnlocks": [
+				"-mindbender"
+			],
 			"taskUnlocks": [
 				"-genius"
 			]
