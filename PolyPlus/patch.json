@@ -294,8 +294,17 @@
 				"+slide"
 			]
 		},
-		"hexapod": {},
-		"doomux": {},
+		"hexapod": {
+			"unitAbilities": [
+				"-sneak"
+			]
+		},
+		"doomux": {
+			"unitAbilities": [
+				"+sneak",
+				"-static"
+			]
+		},
 		"phychi": {},
 		"kiton": {},
 		"exida": {},
