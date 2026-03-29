@@ -65,6 +65,29 @@
 			"startingStars": 5
 		},
 		"cymanti": {
+			"unitOverrides": {
+				"rider": "hexapod",
+				"giant": "centipede",
+				"knight": "doomux",
+				"archer": "phychi",
+				"swordsman": "mantis",
+				"catapult": "exida",
+				"defender": "kiton",
+				"mindbender": "mindbender",
+				"cloak": "moth",
+				"dagger": "bugegg",
+				"pirate":"bugegg",
+				"rammership":"boomchi",
+				"scoutship":"raychi",
+				"bombership":"island"
+			},
+			"techOverrides": {
+				"roads": "cymroads",
+				"construction": "recycling",
+				"chivalry": "shock",
+				"meditation": "rituals",
+				"philosophy": "mysticism"
+			},
 			"startingUnit": "warrior",
 			"startingStars": 5
 		}
@@ -102,6 +125,19 @@
 		"shields": {},
 		"diplomacy": {},
 		"roads": {},
+		"cymroads": {
+			"techUnlocks": [
+				"trade"
+			],
+			"improvementUnlocks": [
+				"mycelium"
+			],
+			"unitUnlocks": [
+				"shaman"
+			],
+			"cost": 2,
+			"idx": -1
+		},
 		"trade": {},
 		"organization": {
 			"techUnlocks": [
