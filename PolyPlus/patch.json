@@ -353,7 +353,9 @@
 			]
 		},
 		"dagger": {},
-		"cloak": {},
+		"cloak": {
+			"cost": 5
+		},
 		"cloak_boat": {},
 		"pirate": {},
 		"bombership": {
@@ -376,7 +378,9 @@
 		"mermaidarcher": {},
 		"mermaidswordsman": {},
 		"mermaiddefender": {},
-		"mermaidcloak": {},
+		"mermaidcloak": {
+			"cost": 5
+		},
 		"mermaiddagger": {},
 		"jelly": {},
 		"shark": {},
