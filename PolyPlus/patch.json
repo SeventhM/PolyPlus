@@ -64,6 +64,9 @@
 			"tribeAbilities": [
 				"-rainbowvision"
 			],
+			"techOverrides": {
+				"forestry": "elyforestry"
+			},
 			"startingStars": 5
 		},
 		"polaris": {
@@ -236,6 +239,17 @@
 		"riding2": {},
 		"spearing": {},
 		"forestmagic": {},
+		"elyforestry": {
+			"techUnlocks": [
+				"mathematics"
+			],
+			"improvementUnlocks": [
+				"sanctuary",
+				"enchantforest"
+			],
+			"cost": 2,
+			"idx": -1
+		},
 		"watermagic": {},
 		"icefishing": {},
 		"frostwork": {
@@ -490,6 +504,27 @@
 		"forge": {},
 		"enchantanimal": {},
 		"sanctuary": {},
+		"enchantforest": {
+			"cost": 8,
+			"terrainRequirements": [
+				{
+					"terrain": "forest"
+				}
+			],
+			"improvementAbilities": [
+				"consumed"
+			],
+			"maxLevel": 0,
+			"creates": [
+				{
+					"unit": "treant"
+				},
+				{
+					"terrain": "field"
+				}
+			],
+			"idx": -1
+		}
 		"outpost": {},
 		"icebank": {},
 		"icetemple": {
