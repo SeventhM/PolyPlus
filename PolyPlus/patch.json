@@ -342,7 +342,10 @@
 		"ciru": {},
 		"mantis": {},
 		"bugegg": {
-			"movement": 1
+			"movement": 1,
+			"unitAbilities": [
+				"+land"
+			]
 		},
 		"moth": {},
 		"larva": {
