@@ -367,7 +367,11 @@
 		"scoutship": {},
 		"transportship": {},
 		"rammership": {},
-		"juggernaut": {},
+		"juggernaut": {
+			"unitAbilities": [
+				"-stiff"
+			]
+		},
 		"mermaidwarrior": {},
 		"mermaidarcher": {},
 		"mermaidswordsman": {},
