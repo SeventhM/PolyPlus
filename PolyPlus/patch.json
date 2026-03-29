@@ -322,7 +322,14 @@
 		"cloak": {},
 		"cloak_boat": {},
 		"pirate": {},
-		"bombership": {},
+		"bombership": {
+			"defence": 20,
+			"attack": 40,
+			"cost": 10,
+			"unitAbilities": [
+				"-splash"
+			]
+		},
 		"scoutship": {},
 		"transportship": {},
 		"rammership": {},
