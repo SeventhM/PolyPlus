@@ -636,7 +636,11 @@
 			"maxlevel": 2
 		},
 		"algae": {},
-		"mycelium": {},
+		"mycelium": {
+			"improvementAbilities": [
+				"-limited"
+			]
+		},
 		"clathrus": {
 			"adjacencyRequirements": [
 				{
