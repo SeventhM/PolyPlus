@@ -390,7 +390,12 @@
 				"+land"
 			]
 		},
-		"moth": {},
+		"moth": {
+			"health": 50,
+			"unitAbilities": [
+				"+hide"
+			]
+		},
 		"larva": {
 			"attack": 17,
 			"unitAbilities": [
