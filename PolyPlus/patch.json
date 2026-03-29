@@ -371,7 +371,13 @@
 		},
 		"atoll": {},
 		"canal": {},
-		"fertilize": {},
+		"fertilize": {
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				}
+			]
+		},
 		"algaespawn": {},
 		"guild": {
 			"cost": 5,
