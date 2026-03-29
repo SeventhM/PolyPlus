@@ -312,7 +312,9 @@
 				"-static"
 			]
 		},
-		"phychi": {},
+		"phychi": {
+			"attack": 10
+		},
 		"kiton": {},
 		"exida": {},
 		"centipede": {},
