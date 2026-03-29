@@ -50,7 +50,8 @@
 		},
 		"aquarion": {
 			"techOverrides": {
-				"fishing": "fishing"
+				"fishing": "fishing",
+				"aquatism": "aquatism2"
 			},
 			"improvementOverrides": {
 				"port": "none",
@@ -90,6 +91,7 @@
 				"bombership":"island"
 			},
 			"techOverrides": {
+				"aquatism": "aquatism2",
 				"roads": "cymroads",
 				"construction": "recycling",
 				"chivalry": "shock",
@@ -174,6 +176,17 @@
 				"-watertemple",
 				"+customshouse"
 			]
+		},
+		"aquatism2": {
+			"improvementUnlocks": [
+				"customshouse"
+			],
+			"defenceBonusUnlocks": {
+				"water": 15,
+				"ocean": 15
+			},
+			"cost": 3,
+			"idx": -1
 		},
 		"sailing": {},
 		"navigation": {
