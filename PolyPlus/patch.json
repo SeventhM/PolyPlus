@@ -341,9 +341,17 @@
 		"island": {},
 		"ciru": {},
 		"mantis": {},
-		"bugegg": {},
+		"bugegg": {
+			"movement": 1
+		},
 		"moth": {},
-		"larva": {}
+		"larva": {
+			"attack": 17,
+			"unitAbilities": [
+				"+poison",
+				"-grow"
+			]
+		}
 	},
 	"improvementData": {
 		"none": {},
