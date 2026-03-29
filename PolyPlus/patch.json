@@ -50,12 +50,10 @@
 		},
 		"aquarion": {
 			"techOverrides": {
-				"fishing": "fishing",
-				"sailing": "aquaculture",
 				"aquatism": "aquatism2"
 			},
 			"improvementOverrides": {
-				"port": "none",
+				"port": "atoll",
 				"customshouse": "none"
 			},
 			"tribeAbilities": [],
@@ -76,7 +74,7 @@
 				"sailing": "frostwork",
 				"navigation": "polarwarfare",
 				"aquatism": "polarism",
-				"ramming" : "sledding"
+				"aquaculture" : "sledding"
 			},
 			"improvementOverrides": {
 				"market": "market",
@@ -102,14 +100,14 @@
 			},
 			"startingUnit": "warrior",
 			"startingStars": 5
-		},
+		}
 	},
 	"techData": {
 		"basic": {
 			"techUnlocks": [
 				"organization",
 				"climbing",
-				"fishingplus",
+				"aquafishing",
 				"hunting",
 				"freespirit"
 			],
@@ -167,7 +165,23 @@
 		"farming": {},
 		"construction": {},
 		"fishingsimple": {},
-		"fishing": {},
+		"fishing": {
+			"techUnlocks": [
+				"sailing",
+				"aquaculture"
+			],
+			"improvementUnlocks": [
+				"fishing"
+			]
+		},
+		"aquaculture": {
+			"improvementUnlocks":[
+				"+harvestaquacrop",
+				"+port",
+				"-atoll",
+				"-aquafarm"
+			]
+		},
 		"ramming": {
 			"improvementUnlocks":[
 				"+harvestaquacrop"
@@ -209,6 +223,13 @@
 			"idx": -1
 		},
 		"navigation": {
+			"unitUnlocks": [
+				"bombership",
+				"rammership"
+			],
+			"movementUnlocks": {
+				"ocean": 1
+			},
 			"improvementUnlocks": [
 				"-starfishing"
 			]
@@ -232,12 +253,6 @@
 		"smithery": {},
 		"aquabase": {},
 		"aquafishing": {},
-		"aquaculture": {
-			"improvementUnlocks":[
-				"+harvestaquacrop",
-				"-aquafarm"
-			]
-		},
 		"marinelife": {},
 		"freediving": {},
 		"waterways": {},
