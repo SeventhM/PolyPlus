@@ -534,7 +534,16 @@
 		"ruin": {},
 		"road": {},
 		"farm": {},
-		"windmill": {},
+		"windmill": {
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				},
+				{
+					"terrain": "mountain"
+				}
+			]
+		},
 		"fishing": {},
 		"port": {
 			"cost": 5
@@ -543,7 +552,16 @@
 		"clearforest": {},
 		"burnforest": {},
 		"lumberhut": {},
-		"sawmill": {},
+		"sawmill": {
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				},
+				{
+					"terrain": "mountain"
+				}
+			]
+		},
 		"growforest": {},
 		"harvestfruit": {},
 		"temple": {},
@@ -564,7 +582,16 @@
 			]
 		},
 		"mine": {},
-		"forge": {},
+		"forge": {
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				},
+				{
+					"terrain": "mountain"
+				}
+			]
+		},
 		"enchantanimal": {},
 		"sanctuary": {},
 		"enchantforest": {
@@ -648,7 +675,16 @@
 			],
 			"shouldSuggestUnlock": true
 		},
-		"market": {},
+		"market": {
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				},
+				{
+					"terrain": "mountain"
+				}
+			]
+		},
 		"customshouse": {
 			"hidden": false,
 			"cost": 10,
@@ -656,6 +692,9 @@
 			"terrainRequirements": [
 				{
 					"terrain": "field"
+				},
+				{
+					"terrain": "mountain"
 				}
 			],
 			"adjacencyRequirements": [
