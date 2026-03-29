@@ -296,6 +296,9 @@
 		"watermagic": {},
 		"icefishing": {},
 		"frostwork": {
+			"unitUnlocks": [
+				"-battlesled"
+			],
 			"techUnlocks": [
 				"navigation"
 			]
