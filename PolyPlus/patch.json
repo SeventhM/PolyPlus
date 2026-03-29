@@ -509,7 +509,9 @@
 		},
 		"algae": {},
 		"mycelium": {},
-		"clathrus": {},
+		"clathrus": {
+			"cost": 10
+		},
 		"hiddensanctuary": {},
 		"harvestspores": {},
 		"starfishing": {},
