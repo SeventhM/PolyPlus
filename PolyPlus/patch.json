@@ -49,6 +49,14 @@
 			"startingStars": 5
 		},
 		"aquarion": {
+			"techOverrides": {
+				"fishing": "fishing"
+			},
+			"improvementOverrides": {
+				"port": "none",
+				"customshouse": "none"
+			},
+			"tribeAbilities": [],
 			"startingStars": 5
 		},
 		"elyrion": {
