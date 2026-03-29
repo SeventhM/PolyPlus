@@ -286,7 +286,14 @@
 			"idx": -1
 		},
 		"battlesled": {},
-		"icefortress": {},
+		"icefortress": {
+			"movement": 1
+			"cost": 10,
+			"unitAbilities": [
+				"-escape",
+				"+dash"
+			]
+		},
 		"icearcher": {},
 		"crab": {},
 		"gaami": {
