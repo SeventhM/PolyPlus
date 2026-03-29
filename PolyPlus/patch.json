@@ -111,6 +111,10 @@
 				"hunting",
 				"freespirit"
 			],
+			"taskUnlocks": [
+				"+wealth",
+				"+genius"
+			],
 			"abilityUnlocks": [
 				"+disband"
 			]
@@ -148,7 +152,11 @@
 			"cost": 2,
 			"idx": -1
 		},
-		"trade": {},
+		"trade": {
+			"taskUnlocks": [
+				"-wealth"
+			]
+		},
 		"organization": {
 			"techUnlocks": [
 				"-shields",
@@ -248,7 +256,11 @@
 				"-icetemple"
 			]
 		},
-		"philosophy": {},
+		"philosophy": {
+			"taskUnlocks": [
+				"-genius"
+			]
+		},
 		"mining": {},
 		"smithery": {},
 		"aquabase": {},
