@@ -202,7 +202,11 @@
 		"scout": {},
 		"warrior": {},
 		"rider": {},
-		"knight": {},
+		"knight": {
+			"unitAbilities": [
+				"+static"
+			]
+		},
 		"defender": {},
 		"catapult": {},
 		"archer": {},
