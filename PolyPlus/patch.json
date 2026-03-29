@@ -510,6 +510,16 @@
 		"algae": {},
 		"mycelium": {},
 		"clathrus": {
+			"adjacencyRequirements": [
+				{
+					"effect": "algae"
+				}
+			],
+			"adjacencyImprovements": [
+				{
+					"effect": "algae"
+				}
+			],
 			"cost": 10
 		},
 		"hiddensanctuary": {},
