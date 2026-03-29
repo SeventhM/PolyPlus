@@ -255,6 +255,24 @@
 		"dragonegg": {},
 		"babydragon": {},
 		"firedragon": {},
+		"treant": {
+			"health": 200,
+			"defence": 20,
+			"movement": 1,
+			"range": 1,
+			"attack": 20,
+			"cost": 8,
+			"unitAbilities": [
+				"dash",
+				"autoheal",
+                "independent",
+                "static"
+			],
+			"hidden": true,
+			"weapon": 7,
+			"prefab": "treant",
+			"idx": -1
+		},
 		"amphibian": {},
 		"tridention": {},
 		"mooni": {
