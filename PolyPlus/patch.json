@@ -61,6 +61,9 @@
 			"startingStars": 5
 		},
 		"elyrion": {
+			"tribeAbilities": [
+				"-rainbowvision"
+			],
 			"startingStars": 5
 		},
 		"polaris": {
