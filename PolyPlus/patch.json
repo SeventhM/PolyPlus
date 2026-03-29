@@ -593,7 +593,14 @@
 			]
 		},
 		"enchantanimal": {},
-		"sanctuary": {},
+		"sanctuary": {
+			"growthRewards": [
+				{
+					"population": 1
+				}
+			],
+			"growthRate": 3
+		},
 		"enchantforest": {
 			"cost": 8,
 			"terrainRequirements": [
