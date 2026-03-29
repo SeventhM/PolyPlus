@@ -310,6 +310,9 @@
 			]
 		},
 		"sledding": {
+			"techUnlocks": [
+				"aquatism"
+			],
 			"improvementUnlocks":[
 				"+harvestaquacrop"
 			]
