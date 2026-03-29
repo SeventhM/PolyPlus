@@ -210,7 +210,15 @@
 				"navigation"
 			]
 		},
-		"polarwarfare": {},
+		"polarwarfare": {
+			"unitUnlocks": [
+				"icefortress",
+				"yuukwi"
+			],
+			"improvementUnlocks": [
+				"-starfishing"
+			]
+		},
 		"sledding": {
 			"improvementUnlocks":[
 				"+harvestaquacrop"
@@ -291,7 +299,7 @@
 			"movement": 2,
 			"range": 1,
 			"attack": 0,
-			"cost": 5,
+			"cost": 8,
 			"unitAbilities": [
 				"skate",
 				"autofreeze",
