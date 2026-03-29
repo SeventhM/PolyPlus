@@ -536,7 +536,9 @@
 		"farm": {},
 		"windmill": {},
 		"fishing": {},
-		"port": {},
+		"port": {
+			"cost": 5
+		},
 		"hunting": {},
 		"clearforest": {},
 		"burnforest": {},
