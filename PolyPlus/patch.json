@@ -275,11 +275,7 @@
 		},
 		"mining": {},
 		"smithery": {},
-		"aquabase": {
-			"improvementUnlocks": [
-				"canal"
-			]
-		},
+		"aquabase": {},
 		"aquafishing": {},
 		"marinelife": {
 			"movementUnlocks": {
