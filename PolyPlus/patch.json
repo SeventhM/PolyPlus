@@ -271,7 +271,13 @@
 		"centipede": {},
 		"segment": {},
 		"raychi": {},
-		"shaman": {},
+		"shaman": {
+			"attack": 30,
+			"promotionLimit": 3,
+			"unitAbilities": [
+				"-convert"
+			]
+		},
 		"dagger": {},
 		"cloak": {},
 		"cloak_boat": {},
