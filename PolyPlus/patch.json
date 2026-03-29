@@ -71,6 +71,10 @@
 				"aquatism": "polarism",
 				"ramming" : "sledding"
 			},
+			"improvementOverrides": {
+				"market": "market",
+				"customshouse": "icebank"
+			},
 			"startingStars": 5
 		},
 		"cymanti": {
@@ -97,6 +101,10 @@
 				"chivalry": "shock",
 				"meditation": "rituals",
 				"philosophy": "mysticism"
+			},
+			"improvementOverrides": {
+				"market": "market",
+				"customshouse": "clathrus"
 			},
 			"startingUnit": "warrior",
 			"startingStars": 5
