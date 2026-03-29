@@ -287,7 +287,7 @@
 		},
 		"battlesled": {},
 		"icefortress": {
-			"movement": 1
+			"movement": 1,
 			"cost": 10,
 			"unitAbilities": [
 				"-escape",
@@ -317,7 +317,12 @@
 		"exida": {},
 		"centipede": {},
 		"segment": {},
-		"raychi": {},
+		"raychi": {
+			"unitAbilities": [
+				"-water",
+				"+amphibious"
+			]
+		},
 		"shaman": {
 			"attack": 30,
 			"promotionLimit": 3,
@@ -352,7 +357,9 @@
 		"siren": {},
 		"aquapult": {},
 		"boomchi": {},
-		"island": {},
+		"island": {
+			"cost": 15
+		},
 		"ciru": {},
 		"mantis": {},
 		"bugegg": {
