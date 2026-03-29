@@ -316,7 +316,9 @@
 			"attack": 10
 		},
 		"kiton": {},
-		"exida": {},
+		"exida": {
+			"attack": 35
+		},
 		"centipede": {},
 		"segment": {},
 		"raychi": {
