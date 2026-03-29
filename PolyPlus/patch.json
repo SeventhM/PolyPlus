@@ -171,7 +171,12 @@
 		},
 		"chivalry": {},
 		"farming": {},
-		"construction": {},
+		"construction": {
+			"improvementUnlocks": [
+				"-burnforest",
+				"+fertilize"
+			]
+		},
 		"fishingsimple": {},
 		"fishing": {
 			"techUnlocks": [
