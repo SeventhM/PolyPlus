@@ -50,7 +50,8 @@
 		},
 		"aquarion": {
 			"techOverrides": {
-				"aquatism": "aquatism2"
+				"aquatism": "aquatism2",
+				"navigation": "aquanavigation"
 			},
 			"improvementOverrides": {
 				"port": "atoll",
@@ -274,9 +275,24 @@
 		},
 		"mining": {},
 		"smithery": {},
-		"aquabase": {},
+		"aquabase": {
+			"improvementUnlocks": [
+				"canal"
+			]
+		},
 		"aquafishing": {},
-		"marinelife": {},
+		"marinelife": {
+			"movementUnlocks": {
+				"ocean": 2
+			}
+		},
+		"aquanavigation": {
+			"unitUnlocks": [
+				"bombership"
+			],
+			"cost": 3,
+			"idx": -1
+		},
 		"freediving": {},
 		"waterways": {},
 		"riding2": {},
