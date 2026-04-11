@@ -122,11 +122,7 @@
 		},
 		"freespirit": {
 			"improvementUnlocks": [
-				"+guild",
-				"+foresttemple",
-				"+watertemple",
-				"+mountaintemple",
-				"+icetemple"
+				"+guild"
 			],
 			"techUnlocks": [
 				"roads",
@@ -262,7 +258,7 @@
 				"+mindbender"
 			],
 			"improvementUnlocks": [
-				"-icetemple"
+				"-mountaintemple"
 			]
 		},
 		"philosophy": {
@@ -334,7 +330,7 @@
 		},
 		"polarism": {
 			"improvementUnlocks": [
-				"-watertemple"
+				"-icetemple"
 			]
 		},
 		"oceanology": {},
@@ -564,23 +560,12 @@
 		},
 		"growforest": {},
 		"harvestfruit": {},
-		"temple": {},
-		"foresttemple": {
-			"cost": 20,
-			"improvementAbilities": [
-				"+discrete"
-			]
+		"temple": {
+			"terrainRequirements": []
 		},
-		"watertemple": {
-			"improvementAbilities": [
-				"+discrete"
-			]
-		},
-		"mountaintemple": {
-			"improvementAbilities": [
-				"+discrete"
-			]
-		},
+		"foresttemple": {},
+		"watertemple": {},
+		"mountaintemple": {},
 		"mine": {},
 		"forge": {
 			"terrainRequirements": [
@@ -624,11 +609,7 @@
 		},
 		"outpost": {},
 		"icebank": {},
-		"icetemple": {
-			"improvementAbilities": [
-				"+discrete"
-			]
-		},
+		"icetemple": {},
 		"polarisclimate": {},
 		"fungi": {
 			"cost": 7,
