@@ -36,6 +36,10 @@
 			"startingStars": 3
 		},
 		"aimo": {
+			"startingTech": [
+				"basic",
+				"meditation"
+			],
 			"startingStars": 5
 		},
 		"quetzali": {
@@ -45,65 +49,304 @@
 			"startingStars": 5
 		},
 		"aquarion": {
+			"techOverrides": {
+				"aquatism": "aquatism2",
+				"navigation": "aquanavigation"
+			},
+			"improvementOverrides": {
+				"port": "atoll",
+				"customshouse": "none"
+			},
+			"tribeAbilities": [],
 			"startingStars": 5
 		},
 		"elyrion": {
+			"tribeAbilities": [
+				"-rainbowvision"
+			],
+			"techOverrides": {
+				"forestry": "elyforestry"
+			},
 			"startingStars": 5
 		},
 		"polaris": {
+			"techOverrides": {
+				"fishing": "fishing",
+				"sailing": "frostwork",
+				"navigation": "polarwarfare",
+				"aquatism": "polarism",
+				"aquaculture" : "sledding"
+			},
+			"improvementOverrides": {
+				"market": "market",
+				"customshouse": "icebank"
+			},
 			"startingStars": 5
 		},
 		"cymanti": {
+			"unitOverrides": {
+				"archer": "phychi",
+				"rammership":"raychi",
+				"scoutship":"boomchi"
+			},
+			"techOverrides": {
+				"sailing": "sailing2",
+				"aquatism": "aquatism2",
+				"meditation": "meditation",
+				"roads": "cymroads"
+			},
+			"improvementOverrides": {
+				"market": "market",
+				"customshouse": "clathrus"
+			},
+			"startingUnit": "warrior",
 			"startingStars": 5
 		}
 	},
 	"techData": {
-		"basic": {},
-		"riding": {},
-		"freespirit": {},
-		"chivalry": {},
-		"roads": {},
-		"trade": {},
-		"organization": {},
+		"basic": {
+			"techUnlocks": [
+				"organization",
+				"climbing",
+				"aquafishing",
+				"hunting",
+				"freespirit"
+			],
+			"taskUnlocks": [
+				"+wealth",
+				"+genius"
+			],
+			"abilityUnlocks": [
+				"+disband"
+			]
+		},
+		"freespirit": {
+			"improvementUnlocks": [
+				"+guild",
+				"+foresttemple",
+				"+watertemple",
+				"+mountaintemple",
+				"+icetemple"
+			],
+			"techUnlocks": [
+				"roads",
+				"shields"
+			],
+			"abilityUnlocks": [
+				"-disband"
+			],
+			"cost": 1
+		},
 		"shields": {},
+		"diplomacy": {},
+		"roads": {},
+		"cymroads": {
+			"techUnlocks": [
+				"trade"
+			],
+			"improvementUnlocks": [
+				"mycelium"
+			],
+			"unitUnlocks": [
+				"shaman"
+			],
+			"cost": 2,
+			"idx": -1
+		},
+		"trade": {
+			"taskUnlocks": [
+				"-wealth"
+			]
+		},
+		"organization": {
+			"techUnlocks": [
+				"-shields",
+				"+riding"
+			]
+		},
+		"riding": {
+			"techUnlocks": [
+				"chivalry"
+			],
+			"cost": 2
+		},
+		"chivalry": {},
 		"farming": {},
-		"construction": {},
-		"fishing": {},
-		"aquatism": {},
-		"sailing": {},
-		"navigation": {},
+		"construction": {
+			"improvementUnlocks": [
+				"-burnforest",
+				"+fertilize"
+			]
+		},
+		"fishingsimple": {},
+		"fishing": {
+			"techUnlocks": [
+				"sailing",
+				"aquaculture"
+			],
+			"improvementUnlocks": [
+				"fishing"
+			]
+		},
+		"aquaculture": {
+			"improvementUnlocks":[
+				"+harvestaquacrop",
+				"+port",
+				"-atoll",
+				"-aquafarm"
+			]
+		},
+		"ramming": {
+			"improvementUnlocks":[
+				"+harvestaquacrop"
+			]
+		},
+		"aquatism": {
+			"improvementUnlocks": [
+				"-watertemple",
+				"+customshouse"
+			]
+		},
+		"aquatism2": {
+			"improvementUnlocks": [
+				"customshouse"
+			],
+			"defenceBonusUnlocks": {
+				"water": 15,
+				"ocean": 15
+			},
+			"cost": 3,
+			"idx": -1
+		},
+		"sailing": {
+			"movementUnlocks": {
+				"water": 1
+			}
+		},
+		"sailing2": {
+			"techUnlocks": [
+				"navigation"
+			],
+			"unitUnlocks": [
+				"scoutship"
+			],
+			"movementUnlocks": {
+				"water": 1
+			},
+			"cost": 2,
+			"idx": -1
+		},
+		"navigation": {
+			"unitUnlocks": [
+				"bombership",
+				"rammership"
+			],
+			"movementUnlocks": {
+				"ocean": 1
+			},
+			"improvementUnlocks": [
+				"-starfishing"
+			]
+		},
 		"hunting": {},
 		"forestry": {},
 		"archery": {},
-		"spiritualism": {},
+		"spiritualism": {
+			"improvementUnlocks": [
+				"-foresttemple"
+			]
+		},
 		"climbing": {},
-		"meditation": {},
-		"philosophy": {},
+		"meditation": {
+			"unitUnlocks": [
+				"+mindbender"
+			],
+			"improvementUnlocks": [
+				"-icetemple"
+			]
+		},
+		"philosophy": {
+			"unitUnlocks": [
+				"-mindbender"
+			],
+			"taskUnlocks": [
+				"-genius"
+			]
+		},
 		"mining": {},
 		"smithery": {},
+		"aquabase": {},
+		"aquafishing": {},
+		"marinelife": {
+			"movementUnlocks": {
+				"ocean": 2
+			}
+		},
+		"aquanavigation": {
+			"unitUnlocks": [
+				"bombership"
+			],
+			"cost": 3,
+			"idx": -1
+		},
 		"freediving": {},
-		"spearing": {},
+		"waterways": {},
 		"riding2": {},
+		"spearing": {},
 		"forestmagic": {},
+		"elyforestry": {
+			"techUnlocks": [
+				"mathematics"
+			],
+			"improvementUnlocks": [
+				"sanctuary",
+				"enchantforest"
+			],
+			"cost": 2,
+			"idx": -1
+		},
 		"watermagic": {},
-		"frostwork": {},
-		"polarwarfare": {},
-		"polarism": {},
+		"icefishing": {},
+		"frostwork": {
+			"unitUnlocks": [
+				"-battlesled"
+			],
+			"techUnlocks": [
+				"navigation"
+			]
+		},
+		"polarwarfare": {
+			"unitUnlocks": [
+				"icefortress",
+				"yuukwi"
+			],
+			"improvementUnlocks": [
+				"-starfishing"
+			]
+		},
+		"sledding": {
+			"techUnlocks": [
+				"aquatism"
+			],
+			"improvementUnlocks":[
+				"+harvestaquacrop"
+			]
+		},
+		"polarism": {
+			"improvementUnlocks": [
+				"-watertemple"
+			]
+		},
 		"oceanology": {},
 		"shock": {},
-		"recycling": {},
+		"recycling": {
+			"abilityUnlocks": [
+				"-decompose",
+				"+destroy"
+			]
+		},
 		"hydrology": {},
-		"diplomacy": {},
-		"aquaculture": {},
-		"fishingsimple": {},
-		"sledding": {},
-		"icefishing": {},
 		"pescetism": {},
-		"ramming": {},
-		"aquabase": {},
-		"marinelife": {},
-		"aquafishing": {},
-		"waterways": {},
 		"rituals": {},
 		"mysticism": {}
 	},
@@ -112,7 +355,11 @@
 		"scout": {},
 		"warrior": {},
 		"rider": {},
-		"knight": {},
+		"knight": {
+			"unitAbilities": [
+				"+static"
+			]
+		},
 		"defender": {},
 		"catapult": {},
 		"archer": {},
@@ -124,49 +371,162 @@
 		"dragonegg": {},
 		"babydragon": {},
 		"firedragon": {},
+		"treant": {
+			"health": 200,
+			"defence": 20,
+			"movement": 1,
+			"range": 1,
+			"attack": 20,
+			"cost": 8,
+			"unitAbilities": [
+				"dash",
+				"autoheal",
+                "independent",
+                "static"
+			],
+			"hidden": true,
+			"weapon": 7,
+			"prefab": "treant",
+			"idx": -1
+		},
 		"amphibian": {},
 		"tridention": {},
-		"mooni": {},
+		"mooni": {
+			"defence": 20,
+			"movement": 1,
+			"cost": 3,
+			"unitAbilities": [
+				"+slide",
+				"+freezearea",
+				"-autofreeze"
+			]
+		},
+		"yuukwi": {
+			"health": 100,
+			"defence": 10,
+			"movement": 2,
+			"range": 1,
+			"attack": 0,
+			"cost": 8,
+			"unitAbilities": [
+				"skate",
+				"autofreeze",
+				"freezearea",
+				"stiff",
+				"land"
+			],
+			"weapon": 7,
+			"promotionLimit": 3,
+			"idx": -1
+		},
 		"battlesled": {},
-		"icefortress": {},
+		"icefortress": {
+			"movement": 1,
+			"cost": 10,
+			"unitAbilities": [
+				"-escape",
+				"+dash"
+			]
+		},
 		"icearcher": {},
 		"crab": {},
-		"gaami": {},
-		"hexapod": {},
-		"doomux": {},
-		"phychi": {},
+		"gaami": {
+			"unitAbilities": [
+				"+slide"
+			]
+		},
+		"hexapod": {
+			"unitAbilities": [
+				"-sneak"
+			]
+		},
+		"doomux": {
+			"unitAbilities": [
+				"+sneak",
+				"-static"
+			]
+		},
+		"phychi": {
+			"attack": 10
+		},
 		"kiton": {},
-		"exida": {},
+		"exida": {
+			"attack": 35
+		},
 		"centipede": {},
 		"segment": {},
-		"raychi": {},
-		"shaman": {},
+		"raychi": {
+			"unitAbilities": [
+				"-water",
+				"+amphibious"
+			]
+		},
+		"shaman": {
+			"attack": 30,
+			"promotionLimit": 3,
+			"unitAbilities": [
+				"-convert"
+			]
+		},
 		"dagger": {},
-		"cloak": {},
+		"cloak": {
+			"cost": 5
+		},
 		"cloak_boat": {},
 		"pirate": {},
-		"bombership": {},
+		"bombership": {
+			"defence": 20,
+			"attack": 40,
+			"cost": 10,
+			"unitAbilities": [
+				"-splash"
+			]
+		},
 		"scoutship": {},
 		"transportship": {},
 		"rammership": {},
-		"juggernaut": {},
+		"juggernaut": {
+			"unitAbilities": [
+				"-stiff"
+			]
+		},
 		"mermaidwarrior": {},
 		"mermaidarcher": {},
 		"mermaidswordsman": {},
 		"mermaiddefender": {},
-		"mermaidcloak": {},
+		"mermaidcloak": {
+			"cost": 5
+		},
 		"mermaiddagger": {},
 		"jelly": {},
 		"shark": {},
 		"siren": {},
 		"aquapult": {},
 		"boomchi": {},
-		"island": {},
+		"island": {
+			"cost": 15
+		},
 		"ciru": {},
 		"mantis": {},
-		"bugegg": {},
-		"moth": {},
-		"larva": {}
+		"bugegg": {
+			"movement": 1,
+			"unitAbilities": [
+				"+land"
+			]
+		},
+		"moth": {
+			"health": 50,
+			"unitAbilities": [
+				"+hide"
+			]
+		},
+		"larva": {
+			"attack": 17,
+			"unitAbilities": [
+				"+poison",
+				"-grow"
+			]
+		}
 	},
 	"improvementData": {
 		"none": {},
@@ -174,47 +534,246 @@
 		"ruin": {},
 		"road": {},
 		"farm": {},
-		"windmill": {},
+		"windmill": {
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				},
+				{
+					"terrain": "mountain"
+				}
+			]
+		},
 		"fishing": {},
-		"port": {},
+		"port": {
+			"cost": 5
+		},
 		"hunting": {},
 		"clearforest": {},
 		"burnforest": {},
 		"lumberhut": {},
-		"sawmill": {},
+		"sawmill": {
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				},
+				{
+					"terrain": "mountain"
+				}
+			]
+		},
 		"growforest": {},
 		"harvestfruit": {},
 		"temple": {},
-		"foresttemple": {},
-		"watertemple": {},
-		"mountaintemple": {},
+		"foresttemple": {
+			"cost": 20,
+			"improvementAbilities": [
+				"+discrete"
+			]
+		},
+		"watertemple": {
+			"improvementAbilities": [
+				"+discrete"
+			]
+		},
+		"mountaintemple": {
+			"improvementAbilities": [
+				"+discrete"
+			]
+		},
 		"mine": {},
-		"forge": {},
+		"forge": {
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				},
+				{
+					"terrain": "mountain"
+				}
+			]
+		},
 		"enchantanimal": {},
-		"sanctuary": {},
+		"sanctuary": {
+			"growthRewards": [
+				{
+					"population": 1
+				}
+			],
+			"growthRate": 3
+		},
+		"enchantforest": {
+			"cost": 8,
+			"terrainRequirements": [
+				{
+					"terrain": "forest"
+				}
+			],
+			"improvementAbilities": [
+				"consumed"
+			],
+			"maxLevel": 0,
+			"creates": [
+				{
+					"unit": "treant"
+				},
+				{
+					"terrain": "field"
+				}
+			],
+			"idx": -1
+		},
 		"outpost": {},
 		"icebank": {},
-		"icetemple": {},
+		"icetemple": {
+			"improvementAbilities": [
+				"+discrete"
+			]
+		},
 		"polarisclimate": {},
-		"fungi": {},
+		"fungi": {
+			"cost": 7,
+			"terrainRequirements": [
+				{
+					"resource": "crop"
+				},
+				{
+					"resource": "spores"
+				}
+			],
+			"maxlevel": 2
+		},
 		"algae": {},
-		"mycelium": {},
-		"clathrus": {},
+		"mycelium": {
+			"improvementAbilities": [
+				"-limited"
+			]
+		},
+		"clathrus": {
+			"adjacencyRequirements": [
+				{
+					"effect": "algae"
+				}
+			],
+			"adjacencyImprovements": [
+				{
+					"effect": "algae"
+				}
+			],
+			"cost": 10
+		},
 		"hiddensanctuary": {},
 		"harvestspores": {},
 		"starfishing": {},
 		"lighthouse": {},
 		"bridge": {},
 		"aquafarm": {},
-		"market": {},
+		"harvestaquacrop": {
+			"idx": -1,
+			"cost": 5,
+			"terrainRequirements": [
+				{
+					"resource": "aquacrop"
+				}
+			],
+			"improvementAbilities": [
+				"consumed"
+			],
+			"maxLevel": 0,
+			"rewards": [
+				{
+					"population": 2
+				}
+			],
+			"shouldSuggestUnlock": true
+		},
+		"market": {
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				},
+				{
+					"terrain": "mountain"
+				}
+			]
+		},
+		"customshouse": {
+			"hidden": false,
+			"cost": 10,
+			"work": 1,
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				},
+				{
+					"terrain": "mountain"
+				}
+			],
+			"adjacencyRequirements": [
+				{
+					"improvement": "port"
+				}
+			],
+			"adjacencyImprovements": [
+				{
+					"improvement": "port"
+				}
+			],
+			"improvementAbilities": [
+				"limited"
+			],
+			"maxLevel": 8,
+			"idx": 4
+		},
 		"atoll": {},
 		"canal": {},
-		"fertilize": {},
-		"algaespawn": {}
+		"fertilize": {
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				}
+			]
+		},
+		"algaespawn": {},
+		"guild": {
+			"cost": 5,
+			"rewards": [
+				{
+					"population": 2
+				}
+			],
+			"terrainRequirements": [
+				{
+					"terrain": "field"
+				},
+				{
+					"terrain": "forest"
+				},
+				{
+					"terrain": "mountain"
+				}
+			],
+			"improvementAbilities": [
+				"limited"
+			],
+			"maxLevel": 0,
+			"idx": -1
+		}
 	},
 	"terrainData": {},
 	"resourceData": {},
 	"taskData": {},
 	"skinData": {},
-	"diplomacyData": {}
+	"diplomacyData": {},
+	"improvementAbility": {},
+	"playerAbility": {
+		"waterembark": {
+			"idx": -1
+		}
+	},
+	"unitAbility": {
+		"slide": {
+			"idx": -1
+		}
+	},
+	"tribeAbility": {}
 }
