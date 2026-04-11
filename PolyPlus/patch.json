@@ -768,5 +768,9 @@
 			"idx": -1
 		}
 	},
-	"tribeAbility": {}
+	"tribeAbility": {
+		"citypark": {
+			"idx": -1
+		}
+	}
 }
