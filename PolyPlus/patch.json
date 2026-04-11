@@ -478,7 +478,9 @@
 				"-splash"
 			]
 		},
-		"scoutship": {},
+		"scoutship": {
+			"cost": 3
+		},
 		"transportship": {},
 		"rammership": {},
 		"juggernaut": {
@@ -542,7 +544,10 @@
 		},
 		"fishing": {},
 		"port": {
-			"cost": 5
+			"cost": 5,
+			"improvementAbilities": [
+				"-embark"
+			]
 		},
 		"hunting": {},
 		"clearforest": {},
@@ -623,7 +628,14 @@
 			],
 			"maxlevel": 2
 		},
-		"algae": {},
+		"algae": {
+			"cost": 3,
+			"creates": [
+				{
+					"effect": "algae"
+				}
+			]
+		},
 		"mycelium": {
 			"improvementAbilities": [
 				"-limited"
