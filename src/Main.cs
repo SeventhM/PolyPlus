@@ -62,4 +62,13 @@ public static class Main
         ActionUtils.EnableTask(gameState, playerState, TaskData.Type.ExploreLighthouses);
         return false;
     }
+
+    [HarmonyPrefix]
+    [HarmonyPatch(typeof(UnitDataExtensions), nameof(UnitDataExtensions.GetDefenceBonus))]
+    private static bool UnitDataExtensions_GetDefenceBonus(ref int __result, UnitState unit, GameState gameState)
+    {
+        __result = DefenceHelper.ComputeDefenceBonus(unit, gameState);
+        return false;
+    }
+
 }
