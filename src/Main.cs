@@ -8,19 +8,57 @@ public static class Main
     public static void Load()
     {
         PolyMod.Loader.AddPatchDataType("tileEffect", typeof(TileData.EffectType));
+        EnumCache<CommandType>.AddMapping("embarkcommand", (CommandType)1000);
         Harmony.CreateAndPatchAll(typeof(Main));
     }
 
     [HarmonyPrefix]
+    [HarmonyPatch(typeof(GameState), nameof(GameState.GetCommand))]
+    public static bool BaseCommand(ref CommandBase __result, CommandType type) 
+    {
+        if (type == EnumCache<CommandType>.GetType("embarkcommand"))
+        {
+	        if (!ClassInjector.IsTypeRegisteredInIl2Cpp<EmbarkCommand>()) 
+		        ClassInjector.RegisterTypeInIl2Cpp<EmbarkCommand>();            			
+            __result = new EmbarkCommand();
+            return false;
+        }
+        return true;
+    }
+
+    [HarmonyPrefix]
+    [HarmonyPatch(typeof(ActionUtils), nameof(ActionUtils.CanPlayerEmbark))]
+    public static bool CanEmbark(ref bool __result,GameState gamestate, PlayerState player) {
+        __result = player.HasAbility("waterembark", gamestate);
+        return false;
+    }
+    
+    [HarmonyPrefix]
+    [HarmonyPatch(typeof(ActionUtils), nameof(ActionUtils.WillUnitEmbark))]
+    public static bool WillUnitEmbark(ref ActionUtils.EmbarkStatus __result, UnitState unit, TileData targetTile, GameState gameState)
+    {
+        __result = MovementHelper.WillUnitEmbark(unit, targetTile, gameState);
+        return false;
+    }
+
+    [HarmonyPrefix]
+    [HarmonyPatch(typeof(PathFinder), nameof(PathFinder.IsTileAccessible))]
+    public static bool IsTileAccessible(ref bool __result, TileData tile, TileData origin, PathFinderSettings settings)
+    {
+        __result = MovementHelper.IsTileAccessible(origin, tile, settings);
+        return false;
+    }
+
+    [HarmonyPrefix]
     [HarmonyPatch(typeof(TileData), nameof(TileData.GetMovementCost))]
-    private static bool TileData_GetMovementCost(
+    public static bool TileData_GetMovementCost(
         ref int __result,
         TileData __instance,
         MapData map,
         TileData fromTile,
         PathFinderSettings settings)
     {
-        __result = MovementHelper.ComputeMovementCost(__instance, map, fromTile, settings);
+        __result = MovementHelper.ComputeMovementCost(map, fromTile, __instance, settings);
         return false;
     }
 
